@@ -48,7 +48,7 @@ public class PedidoService {
         pedidoRepository.save(pedido);
 
         PedidoResponseDTO response = new PedidoResponseDTO();
-        response.setId(pedido.getId()); // <- Adicionado
+        response.setId(pedido.getId());
         response.setCliente(pedido.getCliente());
         response.setUf(pedido.getUf());
         response.setRegiao(regiao);
@@ -116,7 +116,7 @@ public class PedidoService {
         double total = subtotal + imposto;
 
         PedidoResponseDTO response = new PedidoResponseDTO();
-        response.setId(pedido.getId()); // <- Adicionado aqui também
+        response.setId(pedido.getId()); 
         response.setCliente(pedido.getCliente());
         response.setUf(pedido.getUf());
         response.setRegiao(regiao);
